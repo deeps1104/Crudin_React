@@ -1,6 +1,22 @@
- .modal-body{
-  background-color: cornflowerblue;
-}
+
 #heading1 {
-  letter-spacing: 4px;
+  letter-spacing: 3px;
+}
+.open {
+  letter-spacing: 2px;
+  font-size: 18px;
+ 
+}
+.addbtn {
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 5px;
+}
+.modal-content {
+  background-color: #3f5376;
+  width: 150%;
+
+}
+label{
+  color: #fff;
 }

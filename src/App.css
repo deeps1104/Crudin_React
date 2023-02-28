@@ -1,22 +1,4 @@
-
 body {
-  background-color: cornflowerblue;
+background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-70834.jpg?w=1380&t=st=1677578694~exp=1677579294~hmac=76b8c467e34585603dfb54f2a36e2df056a078418f84a1bff77d5c40263fd09b");
+
 }
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #284148;
-}
-
-
