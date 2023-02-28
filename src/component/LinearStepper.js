@@ -17,7 +17,6 @@ import {
   useFormContext,
 } from "react-hook-form";
 
-
 const useStyles = makeStyles((theme) => ({
   button: {
     marginRight: theme.spacing(1),
@@ -51,7 +50,6 @@ const BasicForm = () => {
           />
         )}
       />
-
       <Controller
         control={control}
         name="middle_name"
@@ -65,7 +63,6 @@ const BasicForm = () => {
             margin="normal"
             {...field}
           />
-
         )}
       />
       <Controller
@@ -83,8 +80,6 @@ const BasicForm = () => {
           />
         )}
       />
-
-
     </>
   );
 };
@@ -227,8 +222,6 @@ const PersonalForm = () => {
     </>
   );
 };
-
-
 function getStepContent(step) {
   switch (step) {
     case 0:
@@ -241,10 +234,6 @@ function getStepContent(step) {
       return "unknown step";
   }
 }
-
-
-
-
 const LinearStepper = (props) => {
   const classes = useStyles();
   const methods = useForm({
@@ -266,7 +255,6 @@ const LinearStepper = (props) => {
   const [activeStep, setActiveStep] = useState(0);
   const [skippedSteps, setSkippedSteps] = useState([]);
   const steps = getSteps();
-
   const isStepOptional = (step) => {
     return step === 1 || step === 2;
   };
@@ -286,7 +274,6 @@ const LinearStepper = (props) => {
         props.getapi();
         
       })
-      
       window.location.reload();
     } 
     
@@ -308,8 +295,6 @@ const LinearStepper = (props) => {
     }
     setActiveStep(activeStep + 1);
   };
-
-
   return (
     <div>
       <Stepper alternativeLabel activeStep={activeStep}>
@@ -352,9 +337,7 @@ const LinearStepper = (props) => {
               <Button
                 className={classes.button}
                 disabled={activeStep === 0}
-                onClick={handleBack}
-
-              >
+                onClick={handleBack}>
                 back
               </Button>
               {isStepOptional(activeStep) && (

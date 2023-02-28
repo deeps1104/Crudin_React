@@ -103,7 +103,7 @@ export default function Create() {
 
   useEffect(() => {
     postData()
-  })
+  },[])
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -136,7 +136,6 @@ export default function Create() {
                   <input placeholder='Last Name' class="form-control" onChange={e => onInputChange(e)} value={last_name} name="last_name" />
                 </Form.Field>
                 </div>
-
                 <div className='col-lg-4 col-md-4 col-sm-12'>
                 <Form.Field>
                   <label for="message-text" class="col-form-label">Email</label>
@@ -154,10 +153,7 @@ export default function Create() {
                   <label for="message-text" class="col-form-label">Addresss2</label>
                   <input placeholder='Addresss2' class="form-control" onChange={e => onInputChange(e)}  value={address_line2} name="address_line2" />
                 </Form.Field>
-                
                   </div>
-
-
                   <div className='col-lg-4 col-md-4 col-sm-12'>
                   <Form.Field>
                   <label for="message-text" class="col-form-label">Country</label>
@@ -176,10 +172,8 @@ export default function Create() {
                   <input placeholder='PinCode' class="form-control" onChange={e => onInputChange(e)}  value={pin_code} name="pin_code" />
                 </Form.Field>
                  </div>
-                
                 </div>
               </Form>
-              
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-success m-3" data-bs-dismiss="modal" onClick={updateUser}>Update</button>
@@ -250,94 +244,7 @@ export default function Create() {
         </Box>
       </Modal>
     </div>
-      {/* <div class="modal fade" id="addmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content ">
-            <div class="modal-header ">
-              <h5 class="modal-title" id="exampleModalLabel">Add User Details</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-
-
-            <div class="modal-body ">
-              <Form className="create-form" >
-                <div className='row'>
-                 <div className='col-lg-4 col-md-4 col-sm-12'>
-                 <Form.Field className='form-group '>
-                  <label for="message-text" class="col-form-label ">FirstName</label>
-                  <input placeholder='First Name' class="form-control" value={firstName} onChange={(e) => setFirstName(e.target.value)} name="firstName" />
-                </Form.Field>
-                <Form.Field>
-                  <label for="message-text" className="col-form-label ">MiddleName</label>
-                  <input placeholder='Middle Name' class="form-control" value={middleName} onChange={(e) => setMiddleName(e.target.value)} name="middleName" />
-                </Form.Field>
-                <Form.Field>
-                  <label for="message-text" class="col-form-label ">Last Name</label>
-                  <input placeholder='Last Name' class="form-control" value={lastName} onChange={(e) => setLastName(e.target.value)} name="lastName" />
-                </Form.Field>
-                 </div>
-
-
-                 <div className='col-lg-4 col-md-4 col-sm-12'>
-                 <Form.Field className='form-group '>
-                  <label for="message-text" class="col-form-label ">EMAIL</label>
-                  <input placeholder='Email' class="form-control" value={Email} onChange={(e) => setEmail(e.target.value)} name="Email" />
-                </Form.Field>
-                <Form.Field>
-                  <label for="message-text" className="col-form-label ">Contact</label>
-                  <input placeholder='Contact' class="form-control" value={phonenumber} onChange={(e) => setPhoneNumber(e.target.value)} name="phonenumber" />
-                </Form.Field>
-                <Form.Field>
-                  <label for="message-text" class="col-form-label">Address1</label>
-                  <input placeholder='Address1' class="form-control" value={address1} onChange={(e) => setAddress1(e.target.value)} name="address1" />
-                </Form.Field>
-                <Form.Field>
-                  <label for="message-text" class="col-form-label">Address2</label>
-                  <input placeholder='Address2' class="form-control" value={address2} onChange={(e) => setAddress2(e.target.value)} name="lastName" />
-                </Form.Field>
-                 </div>
-
-                 <div className='col-lg-4 col-md-4 col-sm-12'>
-                 <Form.Field className='form-group '>
-                  <label for="message-text" class="col-form-label ">City</label>
-                  <input placeholder='City' class="form-control" value={city} onChange={(e) => setCity(e.target.value)} name="city" />
-                </Form.Field>
-                <Form.Field>
-                  <label for="message-text" className="col-form-label ">State</label>
-                  <input placeholder='State' class="form-control" value={state} onChange={(e) => setState(e.target.value)} name="state" />
-                </Form.Field>
-                <Form.Field>
-                  <label for="message-text" class="col-form-label">Country</label>
-                  <input placeholder='Country' class="form-control" value={country} onChange={(e) => setCountry(e.target.value)} name="country" />
-                </Form.Field>
-                <Form.Field>
-                  <label for="message-text" class="col-form-label">PinCode</label>
-                  <input placeholder='PinCode' class="form-control" value={pincode} onChange={(e) => setPinCode(e.target.value)} name="pincode" />
-                </Form.Field>
-                 </div>
-                </div>
-              </Form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onClick={AddUser}>ADD</button>
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >CANCEL</button>
-            </div>
-
-
-
-
-
-
-
-
-
-
-          </div>
-        </div>
-      </div> */}
-
+    
     </div>
   )
 }
