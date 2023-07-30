@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Crudin_React/static/css/main.a3b868c6.css",
+    "main.js": "/Crudin_React/static/js/main.c39fe24c.js",
+    "index.html": "/Crudin_React/index.html",
+    "main.a3b868c6.css.map": "/Crudin_React/static/css/main.a3b868c6.css.map",
+    "main.c39fe24c.js.map": "/Crudin_React/static/js/main.c39fe24c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3b868c6.css",
+    "static/js/main.c39fe24c.js"
+  ]
+}
